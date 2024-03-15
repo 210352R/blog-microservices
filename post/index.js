@@ -25,8 +25,8 @@ app.post("/posts", async (req, res) => {
     title,
   };
 
-  // Event bus ekata  postcreated event eka yawanawa
-  await axios.post("http://localhost:4005/events", {
+  // Event bus ekata  post created event eka yawanawa
+  await axios.post("http://event-bus-srv:4005/events", {
     // Event eke body eka yawanwa request eke body eka
     type: "Postcreated",
     data: { id, title },
