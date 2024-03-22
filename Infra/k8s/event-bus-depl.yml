@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: event-bus
-          image: eshanmaduranga/event-bus
+          image: eshanmaduranga/event-bus:latest
 
 ---
 

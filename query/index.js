@@ -12,6 +12,7 @@ const posts = {};
 
 function handleEvent(type, data) {
   if (type === "Postcreated") {
+    console.log("Post created event received");
     const { id, title } = data;
     posts[id] = { id, title, comments: [] };
   }
